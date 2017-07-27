@@ -2,9 +2,9 @@
   "name": "inspirobot-bot",
   "version": "1.0.0",
   "description": "Tool to download inspirational images from InspiroBot automatically",
-  "main": "inspirobot.js",
+  "main": "inspirobot.coffee",
   "scripts": {
-    "start": "node inspirobot.js"
+    "start": "coffee -c inspirobot.coffee; node inspirobot.js"
   },
   "keywords": [
     "inspirobot",

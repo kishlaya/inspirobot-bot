@@ -11,8 +11,8 @@ Along with, I have also documented the InspiroBot API, for anybody else to use.
 1. `git clone https://github.com/kishlaya/inspirobot-bot.git`
 2. `cd inspirobot-bot`
 3. `npm install`
-4. `coffee -c inspirobot.coffee`
-5. `node inspirobot.js X`
+4. `npm start X`
+
 Note: Here *X* denotes the number of quotes you want to download. Enter -1 for unlimited quotes. Also, all the images will be saved in the directory from wherever you execute the script.
 
 

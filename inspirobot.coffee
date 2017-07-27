@@ -16,4 +16,4 @@ getImage = (counter) ->
         .on 'error', (err) ->
             console.error err
 
-getImage num
+getImage parseInt num
