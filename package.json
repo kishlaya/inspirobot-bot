@@ -1,0 +1,23 @@
+{
+  "name": "inspirobot-bot",
+  "version": "1.0.0",
+  "description": "Tool to download inspirational images from InspiroBot automatically",
+  "main": "inspirobot.js",
+  "scripts": {
+    "start": "node inspirobot.js"
+  },
+  "keywords": [
+    "inspirobot",
+    "api",
+    "bot",
+    "inspiration",
+    "images",
+    "quotes",
+    "nodejs"
+  ],
+  "author": "Kishlaya Jaiswal",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}
