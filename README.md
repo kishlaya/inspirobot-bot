@@ -11,7 +11,8 @@ Along with, I have also documented the InspiroBot API, for anybody else to use.
 1. `git clone https://github.com/kishlaya/inspirobot-bot.git`
 2. `cd inspirobot-bot`
 3. `npm install`
-4. `node inspirobot.js X`
+4. `coffee -c inspirobot.coffee`
+5. `node inspirobot.js X`
 Note: Here *X* denotes the number of quotes you want to download. Enter -1 for unlimited quotes. Also, all the images will be saved in the directory from wherever you execute the script.
 
 
@@ -20,3 +21,7 @@ Note: Here *X* denotes the number of quotes you want to download. Enter -1 for u
 The API is fairly simple.
 
 `/api?generate=true` returns back another url for the newly generated quote.
+
+But hold on. That's not yet. They also have special quotes for Christmas. Yay!!!
+
+`/api?generate=true&season=xmas` returns back a url to a special Christmas generated quote

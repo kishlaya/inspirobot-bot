@@ -18,6 +18,7 @@
   "author": "Kishlaya Jaiswal",
   "license": "ISC",
   "dependencies": {
+    "coffeescript": "^1.12.7",
     "request": "^2.81.0"
   }
 }
