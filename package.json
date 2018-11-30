@@ -4,7 +4,8 @@
   "description": "Tool to download inspirational images from InspiroBot automatically",
   "main": "inspirobot.coffee",
   "scripts": {
-    "start": "coffee -c inspirobot.coffee; node inspirobot.js"
+    "compile": "coffee -c inspirobot.coffee"
+    "start": "node inspirobot.js"
   },
   "keywords": [
     "inspirobot",
