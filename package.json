@@ -17,6 +17,10 @@
     "nodejs"
   ],
   "author": "Kishlaya Jaiswal",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kishlaya/inspirobot-bot.git"
+  },
   "license": "ISC",
   "dependencies": {
     "coffeescript": "^1.12.7",
