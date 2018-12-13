@@ -13,7 +13,7 @@ Along with, I have also documented the InspiroBot API, for anybody else to use.
 3. `npm install`
 4. `npm run compile`
 
-And now you're ready to download images 
+And now you're ready to download images
 
 5. `npm start X`
 
@@ -29,3 +29,41 @@ The API is fairly simple.
 But hold on. That's not yet. They also have special quotes for Christmas. Yay!!!
 
 `/api?generate=true&season=xmas` returns back a url to a special Christmas generated quote
+
+### Mindfulness Mode
+
+`/api?getSessionID=1` will generate a unique session ID, using which we will use to generate the mindful data
+
+`/api?generateFlow=1&sessionID=<generated_session_id>` will return the mindful data.
+
+Here's an example of the data returned:
+```json
+  {
+    "data": [
+      {
+        "duration": 2,
+        "image": "IMAGE_CODE",
+        "type": "transition",
+        "time": 0
+      },
+      {
+        "duration": 1.7,
+        "text": "QUOTE HERE",
+        "type": "quote",
+        "time": 6
+      },
+      {
+        "type": "stop",
+        "time": 10
+      }
+    ],
+    "mp3": "mp3_url"
+  }
+```
+
+* `mp3` has the url to the mindful sound
+* `data` contains the structure of the mindful sound
+* `data.type` can be -
+    * `transition` specifies the transition between two consecutive mindful quotes. Consequently, this block will also contain the key `image` which has the iMAGE_CODE to the background image. The IMAGE_CODE can be used to download the image using the following url - https://source.unsplash.com/IMAGE_CODE/1600x900
+    * `quote` is the decoded form of  the voice currently playing the background. The decoded quote can be retrieved from the `text` field.
+    * `stop` specifies the end of the current mindful sound.
