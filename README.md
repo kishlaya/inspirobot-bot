@@ -15,7 +15,13 @@ Along with, I have also documented the InspiroBot API, for anybody else to use.
 
 And now you're ready to download images
 
-5. `npm start X`
+5. `node lib/inspirobot.js X`
+
+### Mindfulness Music Bot Usage
+
+Run the steps 1-4 as above and replace the 5th step with
+
+5. `node lib/inspirobot-mindfulness.js X`
 
 Note: Here *X* denotes the number of quotes you want to download. Enter -1 for unlimited quotes. Also, all the images will be saved in the directory from wherever you execute the script.
 
